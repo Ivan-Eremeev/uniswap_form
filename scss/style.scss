@@ -1,0 +1,121 @@
+@import 'mixins';
+
+@include reset(); // Сброс стилей
+
+// Шрифты
+@include font-face("Inter", "../font/Inter/Inter-Regular/Inter-Regular", normal, normal);
+@include font-face("Inter", "../font/Inter/Inter-Medium/Inter-Medium", 500, normal);
+
+body {
+	background-color: #51176C;
+	font-family: Inter, sans-serif;
+	font-size: 14px;
+}
+input {
+	font-family: Inter, sans-serif;
+}
+button {
+	font-family: Inter, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.pageCenter {
+	display: flex;
+	justify-content: center;
+}
+.uniswapForm {
+	width: 100%;
+	max-width: 420px;
+	padding: 17px;
+	box-shadow: rgba(0, 0, 0, 0.01) 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 4px 8px, rgba(0, 0, 0, 0.04) 0px 16px 24px, rgba(0, 0, 0, 0.01) 0px 24px 32px;
+	border-radius: 30px;
+	background-color: #212429;
+	&_field {
+		padding: 10px 15px;
+		border-radius: 20px;
+		border: 1px solid #303338;
+		margin-bottom: 3px;
+	}
+	&_arrow {
+		display: flex;
+		justify-content: center;
+		padding: 17px 0;
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	&_text {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 15px;
+		p {
+			color: rgb(86, 90, 105);
+		}
+		a {
+			color: rgb(86, 90, 105);
+		}
+	}
+	&_inputBlock {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&_input {
+		input {
+			width: 100%;
+			font-size: 24px;
+			font-weight: 500;
+			background-color: #212429;
+			border: none;
+			color: #C3C5CB;
+			&:placeholder {
+				color: #C3C5CB;
+			}
+		}
+	}
+	&_currency {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	&_img {
+		width: 24px;
+		height: 24px;
+		margin: 0 10px;
+		box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+  	border-radius: 50%;
+	}
+	&_price {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px;
+		color: rgb(86, 90, 105);
+		margin-bottom: 3px;
+	}
+	&_name {
+
+	}
+	&_val {
+
+	}
+	&_btn {
+		button {
+			width: 100%;
+			padding: 18px;
+			background-color: #1B2F48;
+			border-radius: 12px;
+			border: none;
+			font-size: 16px;
+			font-weight: 500;
+			color: #8EB2EC;
+			cursor: pointer;
+		}
+	}
+}

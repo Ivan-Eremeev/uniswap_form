@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Главная
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="keywords" content="")
+		meta(name="description" content="")
+			
+		//- meta(name="robots" content="noindex, nofollow")
+
+		link(rel="stylesheet" href="css/style.css")
+
+	body
+
+		.pageCenter
+
+			form(action="" method="").uniswapForm
+				.uniswapForm_field
+					.uniswapForm_text
+						p From
+						a(href="#") balance: 78848
+					.uniswapForm_inputBlock
+						.uniswapForm_input
+							input(type="text" placeholder="0.0" required)
+						.uniswapForm_currency
+							.uniswapForm_img
+								img(src="img/uniswap_icon.png" alt="")
+							p ETH
+				.uniswapForm_arrow
+					img(src="img/uniswap_arrow.svg" alt="")
+				.uniswapForm_field
+					.uniswapForm_text
+						p To
+						a(href="#") balance: 2000
+					.uniswapForm_inputBlock
+						.uniswapForm_input
+							input(type="text" placeholder="0.0" required)
+						.uniswapForm_currency
+							.uniswapForm_img
+								img(src="img/uniswap_icon.png" alt="")
+							p ETH
+				.uniswapForm_price
+					.uniswapForm_name Price
+					.uniswapForm_val 0.000d34546ETH
+				.uniswapForm_btn
+					button(type="submit") Connect Wallet
+
+
+		
